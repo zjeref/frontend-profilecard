@@ -1,0 +1,111 @@
+:root {
+  --primary-color: hsl(185, 75%, 39%);
+  --text-color: hsl(229, 23%, 23%);
+  --small-text: hsl(227, 10%, 46%);
+}
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+  margin: 0px;
+  font-family: Kumbh Sans;
+  background-color: var(--primary-color);
+}
+
+.cards::before {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  background: url("./images/bg-pattern-top.svg") no-repeat;
+  content: "";
+  background-size: contain;
+  margin-left: -850px;
+  margin-top: -750px;
+}
+
+.cards::after {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  background: url("./images/bg-pattern-bottom.svg") no-repeat;
+  content: "";
+  background-size: contain;
+  margin-right: -850px;
+  margin-bottom: -800px;
+}
+
+.cards {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  border-radius: 15px;
+  z-index: 10;
+}
+
+.card-top {
+  background-image: url(./images/bg-pattern-card.svg);
+  width: 100%;
+  height: 150px;
+  margin-bottom: -50px;
+  border-radius: 14px 14px 0px 0px;
+}
+
+.card-center {
+  text-align: center;
+}
+
+.card-img {
+  border: 6px solid white;
+  border-radius: 250px;
+}
+
+.card-bottom {
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgb(230, 224, 224);
+}
+.stats {
+  padding: 5px 30px 5px 30px;
+  text-align: center;
+}
+
+/* text  */
+
+.bold1 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.bold11 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  padding-top: 15px;
+}
+
+.bold2 {
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: var(--small-text);
+}
+.bold22 {
+  font-weight: 200;
+  font-size: 0.7rem;
+  color: var(--small-text);
+}
+.bold33 {
+  font-weight: 200;
+  font-size: 1rem;
+  color: var(--small-text);
+}
